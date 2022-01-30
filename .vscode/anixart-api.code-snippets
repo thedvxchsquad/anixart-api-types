@@ -1,0 +1,10 @@
+{
+	"create new prop": {
+		"scope": "javascript,typescript",
+		"prefix": "newprop",
+		"body": [
+			"$1: $2;\n"
+		],
+		"description": "Create a new prop in class"
+	}
+}
