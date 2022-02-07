@@ -15,98 +15,58 @@ class Profile {
   public static NONE = 0;
   public static RELEASER = 2;
 
-  @JsonProperty("ban_expires")
-  public banExpires: number;
-  @JsonProperty("ban_reason")
-  public banReason: string | null;
-  @JsonProperty("added_date")
-  public blockListAddedDate: number;
-  @JsonProperty("collection_count")
-  public collectionCount: number;
-  @JsonProperty("comment_count")
-  public commentCount: number;
-  @JsonProperty("completed_count")
-  public completedCount: number;
-  @JsonProperty("dropped_count")
-  public droppedCount: number;
-  @JsonProperty("favorite_count")
-  public favoriteCount: number;
-  @JsonProperty("friend_count")
-  public friendCount: number;
-  @JsonProperty("friend_status")
-  public friendStatus: number | null;
+  public ban_expires: number;
+  public ban_reason: string | null;
+  public added_date: number; // blockListAddedDate
+  public collection_count: number;
+  public comment_count: number;
+  public completed_count: number;
+  public dropped_count: number;
+  public favorite_count: number;
+  public friend_count: number;
+  public friend_status: number | null;
   public history: Release[];
-  @JsonProperty("hold_on_count")
-  public holdOnCount: number;
+  public hold_on_count: number;
 
   public id: number;
-  @JsonProperty("is_banned")
-  public isBanned: boolean;
-  @JsonProperty("is_blocked")
-  public isBlocked: boolean;
-  @JsonProperty("is_comment_notifications_enabled")
-  public isCommentNotificationsEnabled: boolean;
-  @JsonProperty("is_counts_hidden")
-  public isCountsHidden: boolean;
-  @JsonProperty("is_episode_notifications_enabled")
-  public isEpisodeNotificationsEnabled: boolean;
-  @JsonProperty("is_first_episode_notification_enabled")
-  public isFirstEpisodeNotificationEnabled: boolean;
-  @JsonProperty("is_friend_requests_disallowed")
-  public isFriendRequestsDisallowed: boolean;
-  @JsonProperty("is_google_bound")
-  public isGoogleBound: boolean;
-  @JsonProperty("is_login_changed")
-  public isLoginChanged: boolean;
-  @JsonProperty("is_me_blocked")
-  public isMeBlocked: boolean;
-  @JsonProperty("is_online")
-  public isOnline: boolean;
-  @JsonProperty("is_perm_banned")
-  public isPermBanned: boolean;
-  @JsonProperty("is_social")
-  public isSocial: boolean;
-  @JsonProperty("is_social_hidden")
-  public isSocialHidden: boolean;
-  @JsonProperty("is_sponsor")
-  public isSponsor: boolean;
-  @JsonProperty("is_stats_hidden")
-  public isStatsHidden: boolean;
-  @JsonProperty("is_verified")
-  public isVerified: boolean;
-  @JsonProperty("is_vk_bound")
-  public isVkBound: boolean;
-  @JsonProperty("last_activity_time")
-  public lastActivityTime: number;
-  @JsonProperty("plan_count")
-  public planCount: number;
-  @JsonProperty("privilege_level")
-  public privilegeLevel: number;
+  public is_banned: boolean;
+  public is_blocked: boolean;
+  public is_comment_notifications_enabled: boolean;
+  public is_counts_hidden: boolean;
+  public is_episode_notifications_enabled: boolean;
+  public is_first_episode_notification_enabled: boolean;
+  public is_friend_requests_disallowed: boolean;
+  public is_google_bound: boolean;
+  public is_login_changed: boolean;
+  public is_me_blocked: boolean;
+  public is_online: boolean;
+  public is_perm_banned: boolean;
+  public is_social: boolean;
+  public is_social_hidden: boolean;
+  public is_sponsor: boolean;
+  public is_stats_hidden: boolean;
+  public is_verified: boolean;
+  public is_vk_bound: boolean;
+  public last_activity_time: number;
+  public plan_count: number;
+  public privilege_level: number;
   public profileToken: ProfileToken;
-  @JsonProperty("rating_score")
-  public ratingScore: number;
-  @JsonProperty("register_date")
-  public registerDate: number;
+  public rating_score: number;
+  public register_date: number;
   public sponsorshipExpires: number;
   public vote: number;
   public votes: Release[];
-  @JsonProperty("watching_count")
-  public watchingCount: number;
+  public watching_count: number;
   public login = "";
   public password = "";
   public avatar = "";
   public status = "";
-  @JsonProperty("vk_page")
-  public vkPage = "";
-  @JsonProperty("tg_page")
-  public tgPage = "";
-  @JsonProperty("inst_page")
-  public instPage = "";
-  @JsonProperty("tt_page")
-  public ttPage = "";
-  @JsonProperty("watch_dynamics")
-  public watchDynamics: ProfileWatchDynamics[] = [];
-  @JsonProperty("roles")
+  public vk_page = "";
+  public tg_page = "";
+  public inst_page = "";
+  public tt_page = "";
+  public watch_dynamics: ProfileWatchDynamics[] = [];
+
   public roles: Role[] = [];
 
   setProfile(raw: any) {
