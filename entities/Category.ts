@@ -1,7 +1,7 @@
 interface Category {
-    id: number;
-    /**
-     * @default ""
-     */
-    name: string;
+  id: number;
+  /**
+   * @default ""
+   */
+  name: string;
 }
