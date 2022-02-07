@@ -7,7 +7,7 @@ enum ProfileTypes {
   NONE, MEMBER, RELEASER, MODERATOR, ADMINISTRATOR, DEVELOPER
 };
 
-interface Profile {
+export interface Profile {
   ban_expires: number;
   ban_reason: string | null;
   added_date: number; // blockListAddedDate
