@@ -1,7 +1,7 @@
 import { Collection } from "./Collection";
 import { Profile } from "./Profile"
 
-enum Votes {
+export enum Votes {
   NONE, MINUS, PLUS
 }
 
