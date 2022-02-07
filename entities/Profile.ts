@@ -1,4 +1,3 @@
-import { JsonProperties, JsonProperty } from "../utils/json";
 import { ProfileToken } from "./ProfileToken";
 import { ProfileWatchDynamics } from "./ProfileWatchDynamics";
 import { Release } from "./Release";
@@ -6,7 +5,6 @@ import { Role } from "./Role";
 
 interface APIProfileInterface {}
 
-@JsonProperties()
 class Profile {
   public static ADMINISTRATOR = 4;
   public static DEVELOPER = 5;
