@@ -1,3 +1,3 @@
-export class Release {
+export interface Release {
     
 }

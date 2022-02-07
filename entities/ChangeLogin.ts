@@ -1,4 +1,4 @@
-interface ChangeLogin {
+export interface ChangeLogin {
     id: number;
     /**
      * @default ""

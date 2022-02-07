@@ -1,3 +1,3 @@
-export class ProfileWatchDynamics {
+export interface ProfileWatchDynamics {
     
 }

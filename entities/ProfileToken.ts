@@ -1,3 +1,3 @@
-export class ProfileToken {
+export interface ProfileToken {
     
 }
