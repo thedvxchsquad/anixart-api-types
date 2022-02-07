@@ -3,7 +3,7 @@ import { ProfileWatchDynamics } from "./ProfileWatchDynamics";
 import { Release } from "./Release";
 import { Role } from "./Role";
 
-enum ProfileTypes {
+export enum ProfileTypes {
   NONE, MEMBER, RELEASER, MODERATOR, ADMINISTRATOR, DEVELOPER
 };
 

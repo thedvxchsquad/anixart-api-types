@@ -1,6 +1,6 @@
-const TYPE_COLLECTION = "TYPE_COLLECTION";
-const TYPE_PROFILE = "TYPE_PROFILE";
-const TYPE_RELEASE = "TYPE_RELEASE";
+export const TYPE_COLLECTION = "TYPE_COLLECTION";
+export const TYPE_PROFILE = "TYPE_PROFILE";
+export const TYPE_RELEASE = "TYPE_RELEASE";
 
 export interface Search {
   id: number;
