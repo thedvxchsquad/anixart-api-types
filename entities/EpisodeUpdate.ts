@@ -13,5 +13,5 @@ export interface EpisodeUpdate {
   /**
    * @default ""
    */
-  last_episode_type_update_name: string; // or lastEpisodeTypeUpdateName
+  lastEpisodeTypeUpdateName: string; 
 }
