@@ -1,8 +1,8 @@
 export interface ChangeLogin {
-    id: number;
-    /**
-     * @default ""
-     */
-    newLogin: string;
-    timestamp: number;
+  id: number;
+  /**
+   * @default ""
+   */
+  newLogin: string;
+  timestamp: number;
 }
